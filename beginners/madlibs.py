@@ -36,15 +36,15 @@ Take all myself."""
 ###############################################################################
 
 ###############################################################################
-#                0        1     2         3           4          5       6         7           8
-bee_libs = "plural noun, noun, noun, plural noun, adjective, adjective, noun, plural noun, adjective".title().split(", ")
+#                0        1         2           3          4       5         6           7
+bee_libs = "plural noun, noun, plural noun, adjective, adjective, noun, plural noun, adjective".title().split(", ")
 
 if choice == 2:
   for x in bee_libs:
     answers.append(input(x + ": "))
 
 beemovie = f"""According to all known {answers[0]} of {answers[1]}, there is no way a bee should be able to fly.
-Its wings are too small to get its fat little body off the ground.
+Its {answers[2]} are too small to get its fat little body off the ground.
 The Bee, of course, flies anyway, because bees don't care what humans think is impossible."""
 ###############################################################################
 
