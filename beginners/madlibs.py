@@ -3,12 +3,13 @@ Mad Libs Generator!
 1: Romeo and Juiet
 2: Bee Movie
 3: FitGram Pacer Test
-Enter a number:
+
 """)
 
-choice = int(input())
+choice = int(input("Enter a number: "))
 answers = []
 
+###############################################################################
 #               0    1    2    3    4    5    6    7    8       9      10   11
 juliet_libs = "name noun noun noun noun noun noun noun verb adjective noun verb".title().split()
 
@@ -32,10 +33,28 @@ Retain that dear {answers[10]} which he owes
 Without that title. {answers[0]}, {answers[11]} thy name,
 And for that name, which is no part of thee,
 Take all myself."""
+###############################################################################
 
-beemovie = f"""According to all known laws of aviation, there is no way a bee should be able to fly.
+###############################################################################
+#                0        1     2         3           4          5       6         7           8
+bee_libs = "plural noun, noun, noun, plural noun, adjective, adjective, noun, plural noun, adjective".title().split(", ")
+
+if choice == 2:
+  for x in bee_libs:
+    answers.append(input(x + ": "))
+
+beemovie = f"""According to all known {answers[0]} of {answers[1]}, there is no way a bee should be able to fly.
 Its wings are too small to get its fat little body off the ground.
 The Bee, of course, flies anyway, because bees don't care what humans think is impossible."""
+###############################################################################
+
+###############################################################################
+#
+fit_libs = "".title().split()
+
+if choice == 2:
+  for x in fit_libs:
+    answers.append(input(x + ": "))
 
 fitgram = f"""The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues.
 The 20 meter pacer test will begin in 30 seconds. Line up at the start.
@@ -44,7 +63,10 @@ A sing lap should be completed every time you hear this sound. ding
 Remember to run in a straight line and run as long as possible.
 The second time you fail to complete a lap before the sound, your test is over.
 The test will begin on the word start. On your mark. Get ready!… Start. ding"""
+###############################################################################
 
+###############################################################################
+print("\n")
 if choice == 1:
     print(juliet)
 elif choice == 2:
