@@ -6,8 +6,10 @@ Enter a number:
 2: Bee Movie
 3: FitGram Pacer Test
 """)
+
 texts = [juliet, beemovie, fitgram]
 choice = texts[int(input()) - 1]
+
 juliet = f"""O Romeo, Romeo, wherefore art thou Romeo?
 Deny thy father and refuse thy name.
 Or if thou wilt not, be but sworn my love
@@ -26,7 +28,9 @@ And for that name, which is no part of thee,
 Take all myself.
 """
 juliet_libs = "name noun noun noun noun verb adjective noun verb".split()
-beemovie = """accor
+
+beemovie = """According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The Bee, of course, flies anyway, because bees don't care what humans think is impossible. 
 """
+
 fitgram = """THe
 """
