@@ -10,8 +10,8 @@ choice = int(input("Enter a number: "))
 answers = []
 
 ###############################################################################
-#               0    1    2    3    4    5    6    7    8       9      10   11
-juliet_libs = "name noun noun noun noun noun noun noun verb adjective noun verb".title().split()
+#                 0     1     2     3     4     5     6     7     8        9       10    11
+juliet_libs = "a name, noun, noun, noun, noun, noun, noun, noun, verb, adjective, noun, verb".title().split(", ")
 
 if choice == 1:
   for x in juliet_libs:
@@ -49,20 +49,20 @@ The Bee, of course, flies anyway, because bees don't care what {answers[6]} thin
 ###############################################################################
 
 ###############################################################################
-#             0        1        2      3         4        5       6      7     8        9           10          11      12       13          14
-fit_libs = "sport, adjective, sport, adverb, adjective, number, number, noun, noun, sound word, sound word, adjective, noun, random word, sound word".title().split(", ")
+#             0        1        2      3         4        5       6      7     8        9           10          11      12       13
+fit_libs = "sport, adjective, sport, adverb, adjective, number, number, noun, noun, sound word, sound word, adjective, noun, random word".title().split(", ")
 
 if choice == 2:
   for x in fit_libs:
     answers.append(input(x + ": "))
 
-fitgram = f"""The FitnessGram {answers[0]} Test is a multistage {answers[1]} {answers[2]} test that {answers[3]} gets more difficult as it continues.
-The 20 meter pacer test will begin in 30 seconds. Line up at the start.
-The running speed starts slowly but gets faster each minute after you hear this signal bodeboop.
-A sing lap should be completed every time you hear this sound. ding
-Remember to run in a straight line and run as long as possible.
+fitgram = f"""The FitnessGram {answers[0].title()} Test is a multistage {answers[1]} {answers[2]} test that {answers[3]} gets more {answers[4]} as it continues.
+The {answers[5]} meter {answers[0].lower()} test will begin in {answers[6]} seconds. Line up at the {answers[7]}.
+The running {answers[8]} starts slowly but gets faster each minute after you hear this signal {answers[9]}.
+A sing lap should be completed every time you hear this sound. {answers[10]}
+Remember to run in a {answers[11]} {answers[12]} and run as long as possible.
 The second time you fail to complete a lap before the sound, your test is over.
-The test will begin on the word start. On your mark. Get ready!… Start. ding"""
+The test will begin on the word {answers[13]}. On your mark. Get ready!… Start. {answers[10]}"""
 ###############################################################################
 
 ###############################################################################
