@@ -1,11 +1,4 @@
 # python-projects
-https://www.upgrad.com/blog/python-projects-ideas-topics-beginners/
 
-## Beginners
-- Mad Libs Generator
-- Email Slicer
-
-## Intermedate
-
-
-## Advanced
+- [Mad Libs Generator](https://www.upgrad.com/blog/python-projects-ideas-topics-beginners/#1_Mad_Libs_Generator)
+- [Email Slicer](https://www.upgrad.com/blog/python-projects-ideas-topics-beginners/#7_Email_Slicer)
