@@ -49,14 +49,14 @@ The Bee, of course, flies anyway, because bees don't care what {answers[6]} thin
 ###############################################################################
 
 ###############################################################################
-#
-fit_libs = "".title().split()
+#             0        1        2      3         4        5       6      7     8        9           10          11      12       13          14
+fit_libs = "sport, adjective, sport, adverb, adjective, number, number, noun, noun, sound word, sound word, adjective, noun, random word, sound word".title().split(", ")
 
 if choice == 2:
   for x in fit_libs:
     answers.append(input(x + ": "))
 
-fitgram = f"""The FitnessGram Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues.
+fitgram = f"""The FitnessGram {answers[0]} Test is a multistage {answers[1]} {answers[2]} test that {answers[3]} gets more difficult as it continues.
 The 20 meter pacer test will begin in 30 seconds. Line up at the start.
 The running speed starts slowly but gets faster each minute after you hear this signal bodeboop.
 A sing lap should be completed every time you hear this sound. ding
@@ -73,3 +73,5 @@ elif choice == 2:
     print(beemovie)
 elif choice == 3:
     print(fitgram)
+else:
+    print("Number not recognised")
