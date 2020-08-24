@@ -44,8 +44,8 @@ if choice == 2:
     answers.append(input(x + ": "))
 
 beemovie = f"""According to all known {answers[0]} of {answers[1]}, there is no way a bee should be able to fly.
-Its {answers[2]} are too small to get its fat little body off the ground.
-The Bee, of course, flies anyway, because bees don't care what humans think is impossible."""
+Its {answers[2]} are too {answers[3]} to get its fat {answers[4]} body off the {answers[5]}.
+The Bee, of course, flies anyway, because bees don't care what {answers[6]} think is {answers[7]}."""
 ###############################################################################
 
 ###############################################################################
