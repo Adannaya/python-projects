@@ -3,7 +3,7 @@ email = input("Enter an email address here: ")
 
 at_index = email.find("@")
 if at_index == -1:
-	print('Are you sure this is a valid email address? There is no "@" symbol.")
+	print('Are you sure this is a valid email address? There is no "@" symbol.')
 else:
 	username = email[:at_index]
 	domain = email[at_index + 1:]
